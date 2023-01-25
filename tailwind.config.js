@@ -18,6 +18,9 @@ module.exports = {
 				'2xl':'36px',
 				'3xl': '48px',
 			},
+			spacing: {
+				'104': '26rem',
+			  },
 		},
 	},
 	plugins: [],
