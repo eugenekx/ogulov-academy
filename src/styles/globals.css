@@ -1,3 +1,25 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@font-face {
+    font-family: 'Mabry Pro';
+    src: url("/src/public/fonts/MabryPro-Medium.ttf") format("truetype");
+    font-weight: 500;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("/src/public/fonts/ProximaNovaCond-Light.ttf") format("truetype");
+    font-weight: 300;
+}
+
+@font-face {
+    font-family: 'Proxima Nova';
+    src: url("/src/public/fonts/ProximaNovaCond-Regular.ttf") format("truetype");
+    font-weight: 400;
+}
+
+.mask {
+    mask-image: linear-gradient(179.79deg, #000000 0.18%, #000000 65.25%, rgba(217, 217, 217, 0) 97.39%)
+}
