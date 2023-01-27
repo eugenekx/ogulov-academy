@@ -23,3 +23,7 @@
 .mask {
     mask-image: linear-gradient(179.79deg, #000000 0.18%, #000000 65.25%, rgba(217, 217, 217, 0) 97.39%);
 }
+
+.grid-course-info {
+    grid-template-columns: 200px 400px 360px 150px 170px;
+}
