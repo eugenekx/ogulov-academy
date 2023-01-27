@@ -2,9 +2,6 @@
 module.exports = {
 	content: ["./src/**/*.{js,ts,jsx,tsx}"],
 	theme: {
-		colors: {
-			'yellow': '#fbbb21',
-		},
 		extend: {
 			fontFamily:{
 				mabry: ['Mabry Pro', 'sans-serif'],
@@ -19,8 +16,12 @@ module.exports = {
 				'3xl': '48px',
 			},
 			spacing: {
+				'21': '5.25rem',
 				'104': '26rem',
 			  },
+			  colors: {
+				'yellow': '#fbbb21',
+			}
 		},
 	},
 	plugins: [],

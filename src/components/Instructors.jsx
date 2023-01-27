@@ -2,9 +2,9 @@ import { InstructorsCard } from "./InstructorsCard"
 
 export const Instructors = () => {
   return (
-    <div className='max-w-screen-xl font-proxima my-28 mx-auto'>
-        <h2 className='text-2xl text-center font-mabry my-20'>ПРЕПОДАВАТЕЛИ</h2>
-        <div className="grid grid-cols-2 gap-2">
+    <div className='xl:my-28 max-w-screen-xl font-proxima xl:mx-auto mx-4'>
+        <h2 className='xl:text-2xl xl:my-20 text-l text-center font-mabry my-4'>ПРЕПОДАВАТЕЛИ</h2>
+        <div className="grid xl:grid-cols-2 grid-cols-1 gap-2">
           <InstructorsCard />
         </div>
     </div>
