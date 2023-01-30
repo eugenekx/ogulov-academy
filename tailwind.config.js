@@ -8,6 +8,7 @@ module.exports = {
 				proxima: ['Proxima Nova', 'sans-serif'],
 			},
 			fontSize:{
+				xs: '10px',
 				s: '14px',
 				m: '18px',
 				l: '24px',
