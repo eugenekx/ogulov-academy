@@ -18,6 +18,7 @@ module.exports = {
 			spacing: {
 				'21': '5.25rem',
 				'104': '26rem',
+				'183': '45.75rem',
 			  },
 			  colors: {
 				'yellow': '#fbbb21',

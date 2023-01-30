@@ -2,7 +2,7 @@ import Image from 'next/image'
 import CourseImg from '../public/images/course-image.png'
 import Arrow from './Arrow'
 import { CourseDescription } from './CourseDescription'
-import { Instructors } from './Instructors'
+import { InstructorsContainer } from './InstructorsContainer'
 
 export const Course = () => {
   return (
@@ -18,7 +18,7 @@ export const Course = () => {
       <Image src={CourseImg} alt='Course Image'></Image>
     </div>
     <CourseDescription />
-    <Instructors />
+    <InstructorsContainer />
     </>
   )
 }
