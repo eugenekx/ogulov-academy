@@ -8,13 +8,6 @@ function ArrowDown(props) {
       fill="none"
       viewBox="0 0 48 48"
     >
-      <circle
-        cx="24"
-        cy="24"
-        r="24"
-        fill="#fff"
-        transform="rotate(90 24 24)"
-      ></circle>
       <path stroke="#000" strokeWidth="2" d="M24 9L24 38"></path>
       <path
         stroke="#000"

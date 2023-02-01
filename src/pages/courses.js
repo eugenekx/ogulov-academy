@@ -16,20 +16,24 @@ export default function Courses() {
                         <div className='xl:scale-100 scale-75'><Arrow /></div>
                     </button>
                 </div>
-                <div className="flex justify-between">
-                    <div className="xl:w-96 xl:h-16 xl:text-l xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
-                        <input className="placeholder-black" type="search" id="instructor-search" name="instructor" placeholder="ПРЕПОДАВАТЕЛЬ"></input>
+                <div className="flex gap-6">
+                    <div className="grow xl:h-16 xl:text-l xl:pl-10 xl:pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
+                        <input className="placeholder-black grow" type="search" id="instructor-search" name="instructor" placeholder="ПРЕПОДАВАТЕЛЬ"></input>
                         <ArrowDown></ArrowDown>
                     </div>
-                    <div className="xl:w-96 xl:h-16 xl:text-l xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
-                        <input className="placeholder-black" type="search" id="city-search" name="city" placeholder="ГОРОД"></input>
+                    <div className="grow xl:h-16 xl:text-l xl:pl-10 xl:pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
+                        <input className="placeholder-black grow" type="search" id="city-search" name="city" placeholder="ГОРОД"></input>
                         <ArrowDown></ArrowDown>
                     </div>
-                    <div className="xl:w-96 xl:h-16 xl:text-l xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
-                        <input className="placeholder-black" type="search" id="course-search" name="course" placeholder="КУРС"></input>
+                    <div className="grow xl:h-16 xl:text-l xl:pl-10 xl:pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
+                        <input className="placeholder-black grow" type="search" id="course-search" name="course" placeholder="КУРС"></input>
                         <ArrowDown></ArrowDown>
                     </div>
                 </div>
+                <div className="xl:h-16 xl:text-l xl:my-10 xl:pl-10 xl:pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
+                        <input className="placeholder-black grow" type="search" id="course-search" name="course" placeholder="ВВЕДИТЕ НАЗВАНИЕ"></input>
+                        <ArrowDown></ArrowDown>
+                    </div>
                 <div className="xl:my-20 flex flex-col">
                     <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info font-mabry border-b-2 border-black">
                         <div>ДАТА</div>
@@ -40,68 +44,17 @@ export default function Courses() {
                     <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info items-center font-proxima">
                         <div>
                             <p>15 января</p>
-                            <p>10:00-15:00</p>
+                            <p className="font-light">10:00-15:00</p>
                         </div>
                         <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
                         <div className="flex items-center">
-                            <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
+                            <div className="overflow-hidden rounded-full mr-4 font-light"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
                             Романенко Диана
                         </div>
-                        <div>8000Р</div>
+                        <div className="font-light">8000₽</div>
                         <div><button className="font-mabry">ЗАПИСАТЬСЯ</button></div>
                     </div>
-                    <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info items-center font-proxima">
-                        <div>
-                            <p>15 января</p>
-                            <p>10:00-15:00</p>
-                        </div>
-                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
-                        <div className="flex items-center">
-                            <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
-                            Романенко Диана
-                        </div>
-                        <div>8000Р</div>
-                        <div><button className="font-mabry">ЗАПИСАТЬСЯ</button></div>
-                    </div>
-                    <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info items-center font-proxima">
-                        <div>
-                            <p>15 января</p>
-                            <p>10:00-15:00</p>
-                        </div>
-                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
-                        <div className="flex items-center">
-                            <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
-                            Романенко Диана
-                        </div>
-                        <div>8000Р</div>
-                        <div><button className="font-mabry">ЗАПИСАТЬСЯ</button></div>
-                    </div>
-                    <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info items-center font-proxima">
-                        <div>
-                            <p>15 января</p>
-                            <p>10:00-15:00</p>
-                        </div>
-                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
-                        <div className="flex items-center">
-                            <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
-                            Романенко Диана
-                        </div>
-                        <div>8000Р</div>
-                        <div><button className="font-mabry">ЗАПИСАТЬСЯ</button></div>
-                    </div>
-                    <div className="w-full xl:py-6 xl:text-m xl:my-1 grid grid-course-info items-center font-proxima">
-                        <div>
-                            <p>15 января</p>
-                            <p>10:00-15:00</p>
-                        </div>
-                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
-                        <div className="flex items-center">
-                            <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
-                            Романенко Диана
-                        </div>
-                        <div>8000Р</div>
-                        <div><button className="font-mabry">ЗАПИСАТЬСЯ</button></div>
-                    </div>
+                    
                 </div>
                 
                 

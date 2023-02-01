@@ -9,7 +9,7 @@ export const CourseDescription = ({children}) => {
 
     return (
         <div className='xl:text-l xl:my-14 xl:mx-auto max-w-screen-xl text-s font-proxima my-7 mx-4'>
-            <h2 className='xl:text-2xl text-l text-center font-mabry my-14'>О КУРСЕ</h2>
+            <h2 className='xl:text-2xl text-l text-center font-mabry my-12'>О КУРСЕ</h2>
             <div className='mask'>
                 <p>Самая востребованная и популярная техника массажа Александра Ермолаева на рынке России, СНГ и Зарубежья. Авторская массажная технология.</p>
                 <ul className='list-disc'>Какой эффект:
