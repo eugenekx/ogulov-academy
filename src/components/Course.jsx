@@ -16,7 +16,7 @@ export const Course = () => {
 					></Image>
 				</div>
 				<div className="xl:col-span-2">
-					<h1 className="xl:text-3xl xl:my-12 mb-6 mt-12 text-l font-mabry leading-tight">
+					<h1 className="xl:text-3xl xl:my-12 mb-6 mt-12 text-xl font-mabry leading-tight">
 						ФИТНЕС-ФОРМИРУЮЩИЙ МАССАЖ ЛИЦА
 					</h1>
 					<button className="xl:text-l xl:py-3 xl:pl-9 xl:pr-6 xl:w-80 my-4 pl-6 pr-4 w-56 text-m flex justify-between items-center font-mabry bg-yellow rounded-full">
