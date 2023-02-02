@@ -1,12 +1,9 @@
-const Logo = (width, height) => (
+const Logo = ({...props}) => (
     <svg
-      width={width}
-      height={height}
       xmlns="http://www.w3.org/2000/svg"
       viewBox="0 0 130.16 130.16"
-      {...props}
+      
     >
-      <title>{"\u0420\u0435\u0441\u0443\u0440\u0441 1"}</title>
       <g data-name="\u0421\u043B\u043E\u0439 2">
         <g data-name="Layer 1">
           <path
