@@ -1,4 +1,5 @@
 import { Header } from "./Header";
+import { Footer } from "./Footer";
 import { useLayoutEffect, useState } from "react";
 import Link from "next/link";
 import { gsap } from "gsap";
@@ -71,6 +72,7 @@ export const Layout = ({children}) => {
           />
           {isMenuOpen && <Menu />}
           {children}
+          <Footer />
       </div>
   )
 }
