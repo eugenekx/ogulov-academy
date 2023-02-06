@@ -20,11 +20,11 @@ export default function Instructors() {
                          - массаж живота - массаж внутренних органов через переднюю стенку живота. Профессиональное начало деятельности
                           в области висцеральной практики с 1985 года.
                         </p>
-                        <p className="text-md mb-10">Программы: <Link href='/courses' className="underline">Висцеральная практика</Link></p>
-                        <button className='xl:text-l xl:py-3 xl:px-7 xl:w-72 w-52 pl-6 pr-4 my-auto text-md flex justify-between items-center font-mabry bg-yellow rounded-full'>
+                        <p className="text-md mb-10">Программы: <Link href='/' className="underline">Висцеральная практика</Link></p>
+                        <Link href='/aboutinstructor' className='xl:text-l xl:py-3 xl:px-7 xl:w-72 w-52 pl-6 pr-4 my-auto text-md flex justify-between items-center font-mabry bg-yellow rounded-full'>
                             ПОДРОБНЕЕ
                             <div className='xl:scale-100 scale-75'><Arrow /></div>
-                        </button>
+                        </Link>
                     </div>
                     <div className="mx-4">
                         <Image
