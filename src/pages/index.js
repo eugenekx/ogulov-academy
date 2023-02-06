@@ -2,6 +2,8 @@ import { Hero } from "@components/Hero";
 import { CourseCard } from "@components/CourseCard";
 import Link from "next/link";
 import { Slider } from "@components/Slider";
+import { About } from "@components/About";
+import { Licenses } from "@components/Licenses";
 
 export default function Home() {
 	return (
@@ -23,6 +25,8 @@ export default function Home() {
 				</div>
 			</section>
 			<Slider />
+			<About />
+			<Licenses />
 		</>
 	);
 }
