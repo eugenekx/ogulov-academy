@@ -5,7 +5,7 @@ import Burger from "./Burger";
 export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 	return (
 		<div className="fixed w-full top-0 mx-auto text-md font-mabry z-40 bg-white h-20 xl:h-28">
-			<div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-4 flex h-full justify-between items-center">
+			<div className="xl:max-w-screen-xl lg:max-w-screen-lg lg:mx-auto px-4 flex h-full justify-between items-center">
 				<div className="xl:w-16 w-12">
 					<Logo />
 				</div>

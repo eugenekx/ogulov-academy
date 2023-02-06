@@ -5,7 +5,8 @@ import LinkArrow from './LinkArrow';
 export const Footer = () => {
 
 	return (
-        <div className='xl:max-w-screen-xl lg:max-w-screen-lg mx-4 text-s xl:text-m font-mabry border-black border rounded-3xl px-4 lg:px-12 py-8 my-14'>
+        <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto">
+           <div className='xl:max-w-screen-xl lg:max-w-screen-lg mx-4 text-s xl:text-m font-mabry border-black border rounded-3xl px-4 lg:px-12 py-8 my-14'>
             <div className='flex flex-col gap-6 text-m mb-4 lg:flex-row lg:gap-12 xl:text-l'>	
                 <div className="grow">
                     <div className='xl:w-21 w-12'><Link href='/'><Logo /></Link></div>
@@ -29,6 +30,8 @@ export const Footer = () => {
                 ООО «ОГУЛОВ ЦЕНТР», 2022
             </div>
             <Link href='/'>Пользовательское соглашение</Link>
+        </div> 
         </div>
+        
 	);
 };

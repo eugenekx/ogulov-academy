@@ -4,7 +4,7 @@ import InstructorsImage from "../public/images/grid-instructor-image.png";
 
 export const CourseCard = () => {
 	return (
-		<div className="w-full flex flex-wrap rounded-xl shadow-xl relative overflow-hidden">
+		<div className="max-w-[437px] flex flex-wrap rounded-xl shadow-xl relative overflow-hidden mx-auto">
 			<div className="mb-10">
 				<Image src={CourseCardImage} alt="Course image" />
 			</div>

@@ -6,11 +6,11 @@ import Link from "next/link";
 export default function Register() {
 	return (
         <section className="max-w-screen-xl mx-auto my-52">
-            <h1 className="font-mabry text-3xl text-center my-16">
+            <h1 className="font-mabry lg:text-3xl text-xl text-center my-16">
                 РЕГИСТРАЦИЯ
             </h1>
-            <form className="xl:w-140 flex flex-col gap-8 mx-auto my-12">
-                <div className="grow xl:h-16 xl:text-xl xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
+            <form className="lg:w-140 w-64 flex flex-col lg:gap-8 gap-4 mx-auto my-12">
+                <div className="grow lg:h-16 h-12 lg:text-xl xl:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow"
                     type='email'
                     id="email"
@@ -18,7 +18,7 @@ export default function Register() {
                     placeholder="ЭЛ. ПОЧТА"
                     />
                 </div>
-                <div className="grow xl:h-16 xl:text-xl xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="grow lg:h-16 h-12 lg:text-xl xl:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow"
                     type='password'
                     id="password"
@@ -26,7 +26,7 @@ export default function Register() {
                     placeholder="ПАРОЛЬ"
                     />
                 </div>
-                <div className="grow xl:h-16 xl:text-xl xl:px-10 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="grow lg:h-16 h-12 lg:text-xl xl:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow"
                     type='password'
                     id="password-confirm"
@@ -35,14 +35,14 @@ export default function Register() {
                     />
                 </div>
                 <button type='submit'
-                className='xl:text-xl xl:py-3 xl:px-7 xl:w-75 ml-auto mr-0 px-3 text-md flex justify-between items-center font-mabry bg-yellow rounded-full'>
+                className='lg:text-xl lg:py-3 lg:pl-10 lg:pr-6 ml-auto mr-0 pl-6 pr-3 text-md flex items-center font-mabry bg-yellow rounded-full'>
                     ОТПРАВИТЬ
-                    <div className='xl:scale-100 scale-75'>
+                    <div className='lg:scale-100 scale-75 lg:ml-10 ml-4'>
                         <Arrow />
                     </div>
                 </button>
             </form>
-            <div className="text-center text-l font-proxima my-12">
+            <div className="text-center lg:text-l text-m font-proxima my-12">
                 Уже есть аккаунт?
                 <span> </span>
                 <Link className='underline'

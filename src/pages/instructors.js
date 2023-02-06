@@ -9,10 +9,12 @@ import { InstructorsCard } from "@components/InstructorsCard";
 export default function Instructors() {
     return (
         <>
-            <section className="xl:mx-auto max-w-screen-xl xl:my-14">
-                <div className="flex xl:flex-row flex-col-reverse items-center">
-                    <div className="xl:w-1/2 xl:mx-0 xl:my-0 mx-4 my-10">
-                        <h1 className='xl:text-3xl xl:my-12 my-4 text-xl font-mabry leading-tight grow'>ОГУЛОВ АЛЕКСАНДР ТИМОФЕЕВИЧ</h1>
+            <section className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4 xl:mb-14 xl:mt-28 lg:mt-20">
+                <div className="flex lg:flex-row flex-col-reverse gap-4 items-center mx-auto">
+                    <div className="lg:w-1/2 xl:mx-0 xl:my-0 my-10">
+                        <h1 className='xl:text-3xl lg:text-2xl xl:my-12 my-4 text-xl font-mabry leading-tight grow'>
+                            ОГУЛОВ АЛЕКСАНДР ТИМОФЕЕВИЧ
+                        </h1>
                         <p className="text-md font-proxima mb-6">
                         Президент Профессиональной ассоциации специалистов висцеральных практик. Доктор народной медицины, профессор,
                          действительный член международной Европейской Академии Естественных наук (Ганновер. Германия),
@@ -26,7 +28,7 @@ export default function Instructors() {
                             <div className='xl:scale-100 scale-75'><Arrow /></div>
                         </Link>
                     </div>
-                    <div className="mx-4">
+                    <div className="mt-20 lg:mt-0">
                         <Image
                             src={InstructorsImageBanner}
                             alt='Огулов Александр Тимофеевич'
@@ -35,17 +37,17 @@ export default function Instructors() {
                     
                 </div>
             </section>
-            <section className="xl:mx-auto mx-4 max-w-screen-xl my-10">
-                <div className="grid xl:grid-cols-2 grid-cols-1 gap-16">
-                    <InstructorsCard />
-                    <InstructorsCard />
+            <section className="mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg my-10">
+                <div className='xl:my-28 xl:max-w-screen-xl lg:max-w-screen-lg max-w-[587px] font-proxima mx-auto'>
+                    <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
+                        <InstructorsCard />
+                        <InstructorsCard />
+                    </div>
                 </div>
                 <button className='xl:my-24 xl:text-xl my-10 text-m flex items-center font-mabry mx-auto'>ПОКАЗАТЬ ЕЩЕ
                     <div className='xl:scale-100 scale-75'><ArrowDown /></div>
                 </button>
             </section>
-            
-            
         </>
     )
   }

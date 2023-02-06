@@ -2,9 +2,9 @@ import PlayButton from "@components/PlayButton";
 
 export default function Contacts () {
 	return (
-        <section className="max-w-screen-xl mx-auto my-24 flex justify-between items-center">
-            <div>
-                <h1 className="font-mabry text-3xl mb-16 text-left">
+        <section className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto xl:mt-36 mt-28 mb-24 px-4 gap-10 flex lg:flex-row flex-col-reverse justify-between items-center">
+            <div className="w-full">
+                <h1 className="font-mabry text-3xl xl:mb-16 mb-10 text-left">
                     КОНТАКТЫ
                 </h1>
                 <div className="text-lg my-11">
