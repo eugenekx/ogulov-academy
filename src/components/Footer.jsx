@@ -13,21 +13,21 @@ export const Footer = () => {
                     
                 </div>
                 <div>
-                    <div className="text-s xl:text-m mb-4">ССЫЛКИ</div>
-                    <Link className='flex items-center' href='/'>КЛИНИКА<div className='mt-1 ml-2'><LinkArrow /></div></Link>
-                    <Link className='flex items-center' href='/courses'>АКАДЕМИЯ<div className='mt-1 ml-2'><LinkArrow /></div></Link>
-                    <Link className='flex items-center' href='/instructors'>МАГАЗИН<div className='mt-1 ml-2'><LinkArrow /></div></Link>
-                    <Link className='flex items-center' href='/contacts'>АКАДЕМИЯ-ОНЛАЙН<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <div className="text-s xl:text-m mb-4 uppercase">Ссылки</div>
+                    <Link className='flex items-center uppercase' href='/'>Клиника<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <Link className='flex items-center uppercase' href='/courses'>Академия<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <Link className='flex items-center uppercase' href='/instructors'>Магазин<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <Link className='flex items-center uppercase' href='/contacts'>Академия-онлайн<div className='mt-1 ml-2'><LinkArrow /></div></Link>
                 </div>
                 <div>
-                    <div className="text-s xl:text-m mb-4">СОЦ. СЕТИ</div>
-                    <Link className='flex items-center' href='/'>INSTAGRAM<div className='mt-1 ml-2'><LinkArrow /></div></Link>
-                    <Link className='flex items-center' href='/courses'>FACEBOOK<div className='mt-1 ml-2'><LinkArrow /></div></Link>
-                    <Link className='flex items-center' href='/instructors'>VK<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <div className="text-s xl:text-m mb-4 uppercase">Соц. сети</div>
+                    <Link className='flex items-center uppercase' href='/'>Instagram<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <Link className='flex items-center uppercase' href='/courses'>Facebook<div className='mt-1 ml-2'><LinkArrow /></div></Link>
+                    <Link className='flex items-center uppercase' href='/instructors'>Vk<div className='mt-1 ml-2'><LinkArrow /></div></Link>
                 </div>	
             </div>
-            <div>
-                ООО «ОГУЛОВ ЦЕНТР», 2022
+            <div className='uppercase'>
+                ООО «Огулов центр», 2022
             </div>
             <Link href='/'>Пользовательское соглашение</Link>
         </div> 

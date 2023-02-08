@@ -27,25 +27,25 @@ export const Menu = () => {
 
   const menuItems = [
     {
-      name: 'ГЛАВНАЯ',
+      name: 'Главная',
       link: '/',
     },
     {
-      name: 'КУРСЫ',
+      name: 'Курсы',
       link: '/courses',
     },
     {
-      name: 'ПРЕПОДАВАТЕЛИ',
+      name: 'Преподаватели',
       link: '/instructors',
     },
     {
-      name: 'КОНТАКТЫ',
+      name: 'Контакты',
       link: '/contacts',
     },
   ];
 
 	return (
-		<div data-animation='menu' className='xl:hidden w-full h-full fixed top-0 z-20 pt-36 pl-4 flex flex-col gap-16 items-start bg-white font-mabry text-xl'>
+		<div data-animation='menu' className='xl:hidden w-full h-full fixed top-0 z-20 pt-36 pl-4 flex flex-col gap-16 items-start bg-white font-mabry text-xl uppercase'>
       {menuItems.map((menuItems, i) => (
         <Link href={menuItems.link}>{menuItems.name}</Link>
       ))}

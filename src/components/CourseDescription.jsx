@@ -23,7 +23,7 @@ export const CourseDescription = ({children}) => {
                     <li>Появится хорошее настроение, ощущение бодрости, чувство легкости и уверенности в себе.</li>
                 </ul> 
             </div>
-            <button onClick={toggleBtn} className='xl:my-5 flex items-center font-mabry my-2'>ЧИТАТЬ ПОЛНОСТЬЮ
+            <button onClick={toggleBtn} className='xl:my-5 flex items-center font-mabry my-2 uppercase'>Читать полностью
             <div className='xl:scale-100 scale-50'><ArrowDown rotation={isMoreShown ? 180 : 0} /></div>
             </button>
         </div>

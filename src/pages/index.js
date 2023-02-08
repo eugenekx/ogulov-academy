@@ -9,7 +9,7 @@ export default function Home() {
 	return (
 		<>
 			<Hero />
-			<section className="xl:mx-auto max-w-screen-xl pt-56">
+			<div className="xl:mx-auto max-w-screen-xl pt-56">
 				<h1 className="xl:text-3xl mb-14 text-xl font-mabry leading-tight text-center uppercase">
 					Ближайшие события
 				</h1>
@@ -23,7 +23,7 @@ export default function Home() {
 						Открыть календарь событий
 					</Link>
 				</div>
-			</section>
+			</div>
 			<Slider />
 			<About />
 			<Licenses />
