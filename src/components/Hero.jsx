@@ -3,12 +3,16 @@ import Arrow from "@components/Arrow";
 
 export const Hero = () => {
 	return (
-		<div
-			className="bg-no-repeat bg-right relative mt-28"
-			style={{ backgroundImage: "url(/images/hero-image.png)" }}
-		>
-			<div className=" xl:max-w-screen-xl mx-auto flex flex-col justify-end">
-				<div className="w-1/2 h-[826px] flex flex-col justify-center">
+		<div className="bg-no-repeat bg-center lg:bg-right relative h-screen lg:min-h-[800px] md:min-h-[600px] -z-20">
+			<div
+				className="absolute w-full lg:w-2/3 h-2/3 lg:h-full bg-no-repeat right-0 bg-center -z-10"
+				style={{ backgroundImage: "url(/images/hero-image.png)" }}
+			>
+				<div className="bg-gradient-to-t lg:bg-gradient-to-r from-white xl:via-white to-transparent h-full lg:w-2/3 xl:w-1/2"></div>
+			</div>
+			<div className="absolute bottom-0 bg-gradient-to-t w-full h-[80%] md:h-3/4 lg:h-full lg:w-[85%]" />
+			<div className="xl:max-w-screen-xl lg:max-w-screen-lg px-4 lg:mx-auto flex flex-col justify-end">
+				<div className=" lg:min-h-[800px] md:min-h-[600px] lg:w-1/2 h-screen flex flex-col lg:justify-center justify-end pb-32 lg:pb-0">
 					<div className="xl:text-3xl text-xl font-mabry leading-tight uppercase">
 						Учебный центр
 					</div>

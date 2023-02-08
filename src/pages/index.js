@@ -13,7 +13,7 @@ export default function Home() {
 				<h1 className="xl:text-3xl mb-14 text-xl font-mabry leading-tight text-center uppercase">
 					Ближайшие события
 				</h1>
-				<div className="grid xl:grid-cols-3 grid-cols-1 gap-6">
+				<div className="lg:grid xl:grid-cols-3 lg:grid-cols-2 flex flex-wrap gap-6 mx-auto">
 					<CourseCard />
 					<CourseCard />
 					<CourseCard />
