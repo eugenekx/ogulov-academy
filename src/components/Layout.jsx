@@ -25,54 +25,56 @@ export const Menu = () => {
 		openMenuTween();
 	}, []);
 
-  const menuItems = [
-    {
-      name: 'Главная',
-      link: '/',
-    },
-    {
-      name: 'Курсы',
-      link: '/courses',
-    },
-    {
-      name: 'Преподаватели',
-      link: '/instructors',
-    },
-    {
-      name: 'Контакты',
-      link: '/contacts',
-    },
-  ];
+	const menuItems = [
+		{
+			name: "Главная",
+			link: "/",
+		},
+		{
+			name: "Курсы",
+			link: "/courses",
+		},
+		{
+			name: "Преподаватели",
+			link: "/instructors",
+		},
+		{
+			name: "Контакты",
+			link: "/contacts",
+		},
+	];
 
 	return (
-		<div data-animation='menu' className='xl:hidden w-full h-full fixed top-0 z-20 pt-36 pl-4 flex flex-col gap-16 items-start bg-white font-mabry text-xl uppercase'>
-      {menuItems.map((menuItems, i) => (
-        <Link href={menuItems.link}>{menuItems.name}</Link>
-      ))}
-	  </div>
+		<div
+			data-animation="menu"
+			className="xl:hidden w-full h-full fixed top-0 z-20 pt-36 pl-4 flex flex-col gap-16 items-start bg-white font-mabry text-xl uppercase"
+		>
+			{menuItems.map((menuItems, i) => (
+				<Link key={i} href={menuItems.link}>
+					{menuItems.name}
+				</Link>
+			))}
+		</div>
 	);
 };
 
-export const Layout = ({children}) => {
-  const [isMenuOpen, setIsMenuOpen] = useState(false);
-  
-  function toggleMenu () {
-    isMenuOpen
-								? closeMenuTween({
-										onComplete: () => setIsMenuOpen(false),
-								  })
-								: setIsMenuOpen(true)
-	};
+export const Layout = ({ children }) => {
+	const [isMenuOpen, setIsMenuOpen] = useState(false);
 
-    return (
-      <div>
-          <Header
-            isMenuOpen={isMenuOpen}
-            toggleMenu={toggleMenu}
-          />
-          {isMenuOpen && <Menu />}
-          {children}
-          <Footer />
-      </div>
-  )
-}
+	function toggleMenu() {
+		isMenuOpen
+			? closeMenuTween({
+					onComplete: () => setIsMenuOpen(false),
+			  })
+			: setIsMenuOpen(true);
+	}
+
+	return (
+		<div>
+			<Header isMenuOpen={isMenuOpen} toggleMenu={toggleMenu} />
+			{isMenuOpen && <Menu />}
+			{children}
+			<Footer />
+		</div>
+	);
+};
