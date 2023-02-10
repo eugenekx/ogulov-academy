@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Logo from "./logo";
+import Logo from "./Logo";
 import Burger from "./Burger";
 
 export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
