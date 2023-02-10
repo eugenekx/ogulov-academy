@@ -1,15 +1,14 @@
-import { Header } from "@components/Header";
-import Arrow from "@components/Arrow";
 import ArrowDown from "@components/ArrowDown";
 import Image from "next/image";
 import InstructorsImageBanner from '../public/images/Instructors-image-main.png';
 import Link from 'next/link';
 import { InstructorsCard } from "@components/InstructorsCard";
+import ActionBtn from "@components/ActionBtn";
 
 export default function Instructors() {
     return (
         <>
-            <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4 xl:mb-14 xl:mt-28 lg:mt-20">
+            <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4 xl:mb-14 xl:mt-40 mt-32">
                 <div className="flex lg:flex-row flex-col-reverse gap-4 items-center mx-auto">
                     <div className="lg:w-1/2 xl:mx-0 xl:my-0 my-10">
                         <h1 className='xl:text-3xl lg:text-2xl xl:my-12 my-4 text-xl font-mabry leading-tight grow uppercase'>
@@ -23,9 +22,10 @@ export default function Instructors() {
                           в области висцеральной практики с 1985 года.
                         </p>
                         <p className="text-md mb-10">Программы: <Link href='/course-about' className="underline">Висцеральная практика</Link></p>
-                        <Link href='/aboutinstructor' className='xl:text-l xl:py-3 xl:px-7 xl:w-72 w-52 pl-6 pr-4 my-auto text-md flex justify-between items-center font-mabry bg-yellow rounded-full uppercase'>
-                            Подробнее
-                            <div className='xl:scale-100 scale-75'><Arrow /></div>
+                        <Link href='/aboutinstructor'>
+                            <ActionBtn withArrow={true}>
+                                Подробнее
+                            </ActionBtn>
                         </Link>
                     </div>
                     <div className="mt-20 lg:mt-0">

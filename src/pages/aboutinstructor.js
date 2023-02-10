@@ -1,16 +1,13 @@
-import { Header } from "@components/Header";
-import Arrow from "@components/Arrow";
 import ArrowDown from "@components/ArrowDown";
 import Image from "next/image";
 import InstructorsImageBanner from '../public/images/Instructors-image-main.png';
-import Link from 'next/link';
 import { InstructorsCard } from "@components/InstructorsCard";
 import { CourseCard } from "@components/CourseCard";
 
 export default function Aboutinstructor() {
     return (
         <>
-            <div className="xl:mx-auto xl:max-w-screen-xl lg:max-w-screen-lg px-4 mx-auto xl:mt-28 mt-20 mb-10">
+            <div className="xl:mx-auto xl:max-w-screen-xl lg:max-w-screen-lg px-4 mx-auto xl:mt-40 mt-32 mb-10">
                 <div className="flex lg:flex-row flex-col-reverse items-center">
                     <div className="lg:w-1/2 lg:my-0 my-10">
                         <h1 className='xl:text-3xl lg:text-2xl lg:my-12 my-4 text-xl font-mabry leading-tight uppercase'>Огулов Александр Тимофеевич</h1>
@@ -42,7 +39,7 @@ export default function Aboutinstructor() {
             </div>
             <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4">
                 <h1 className='xl:text-3xl lg:text-2xl xl:my-12 mb-10 text-xl font-mabry leading-tight text-center uppercase'>Программы преподавателя</h1>
-                <div className="w-full grid xl:grid-cols-3 lg:grid-cols-2 auto-cols-max lg:gap-24 gap-12">
+                <div className="w-full grid justify-center gap-12 xl:grid-cols-3 lg:grid-cols-2 auto-cols-max">
                     <CourseCard />
                     <CourseCard />
                     <CourseCard />

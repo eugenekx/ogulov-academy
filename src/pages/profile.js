@@ -1,8 +1,9 @@
 import ArrowDown from "@components/ArrowDown";
+import ActionBtn from "@components/ActionBtn";
 
 export default function Profile () {
   return (
-    <div className='xl:max-w-4xl lg:max-w-4xl max-w-md lg:px-28 px-4 mx-auto lg:mt-40 mt-28 lg:mb-56 mb-36'>
+    <div className='xl:max-w-4xl lg:max-w-4xl max-w-md lg:px-28 px-4 mx-auto xl:mt-40 mt-32 lg:mb-56 mb-36'>
         <h1 className='xl:text-3xl lg:text-2xl text-l uppercase my-12 font-mabry text-center'>
             Изменить профиль
         </h1>
@@ -76,7 +77,9 @@ export default function Profile () {
                     </div>
                 </div>
             </div>
-            <button className="lg:px-10 xl:h-16 lg:h-14 h-10 px-6 bg-yellow rounded-full lg:text-l text-m font-mabry uppercase float-right">Сохранить</button>
+            <div className="float-right">
+                <ActionBtn>Сохранить</ActionBtn>
+            </div>
         </form>
     </div>
   )

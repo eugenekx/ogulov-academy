@@ -7,7 +7,7 @@ export const CourseCard = () => {
 	return (
 		<Link 
 		href='/course-about'
-		className="max-w-[437px] min-w-[288px] flex flex-wrap rounded-xl shadow-xl relative overflow-hidden">
+		className="max-w-[437px] min-w-[288px] mx-auto flex flex-wrap rounded-xl shadow-xl relative overflow-hidden">
 			<div className="mb-10">
 				<Image src={CourseCardImage} alt="Course image" />
 			</div>

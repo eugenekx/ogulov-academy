@@ -5,19 +5,19 @@ import Link from "next/link";
 import { gsap } from "gsap";
 
 function openMenuTween() {
-	gsap.fromTo("[data-animation='menu']", { y: -400, opacity: 0 }, { y: 0, opacity: 1 });
+	gsap.fromTo("[data-animation='menu']", { y: -400, opacity: 0 }, { y: 0, opacity: 1, duration: .2});
   gsap.to("[data-animation='firstLine']", { y: 5, duration: .2});
   gsap.to("[data-animation='secondLine']", { y: -5, duration: .2});
-  gsap.to("[data-animation='firstLine']", { rotate: 45, y: -4, x: .5, delay: .4});
-  gsap.to("[data-animation='secondLine']", { rotate: -45, y: 4, x: -.5, delay: .4});
+  gsap.to("[data-animation='firstLine']", { rotate: 45, y: -4, x: .5, delay: .4, duration: .2});
+  gsap.to("[data-animation='secondLine']", { rotate: -45, y: 4, x: -.5, delay: .4, duration: .2});
 }
 
 function closeMenuTween({ onComplete }) {
-	gsap.to("[data-animation='menu']", { y: -400, opacity: 0, onComplete });
+	gsap.to("[data-animation='menu']", { y: -400, opacity: 0, onComplete, duration: .2 });
   gsap.to("[data-animation='firstLine']", { rotate: 0, y: 0, x: 0, duration: .2});
   gsap.to("[data-animation='secondLine']", { rotate: 0, y: 0, x: 0, duration: .2});
-  gsap.to("[data-animation='firstLine']", { y: 0, delay: .4});
-  gsap.to("[data-animation='secondLine']", { y: 0, delay: .4});
+  gsap.to("[data-animation='firstLine']", { y: 0, delay: .4, duration: .2});
+  gsap.to("[data-animation='secondLine']", { y: 0, delay: .4, duration: .2});
 }
 
 export const Menu = () => {

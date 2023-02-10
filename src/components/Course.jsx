@@ -1,11 +1,11 @@
 import Image from 'next/image';
 import CourseImg from '../public/images/course-image.png';
-import Arrow from './Arrow';
 import { CourseDescription } from './CourseDescription';
 import { InstructorsContainer } from './InstructorsContainer';
 import { PopUp } from './PopUp';
 import { useState } from 'react';
 import { gsap } from 'gsap';
+import ActionBtn from './ActionBtn';
 
 function closePopUpTween () {
 	gsap.fromTo("[data-animation='pop-up']", { scale: 1, opacity: 1 }, { scale: 0, opacity: 0 });
@@ -30,7 +30,7 @@ export const Course = () => {
     {isPopUpOpen && <PopUp
     closePopUp={closePopUp}
      />}
-    <div className='xl:my-28 mx-auto px-4 xl:mt-28 mt-20 mb-4 xl:max-w-screen-xl lg:max-w-screen-lg grid lg:grid-cols-9 lg:gap-4 items-center'>
+    <div className='mx-auto px-4 xl:mt-40 mt-32 mb-32 xl:max-w-screen-xl lg:max-w-screen-lg grid lg:grid-cols-9 lg:gap-20 items-center'>
       <div className='overflow-hidden rounded-3xl lg:col-span-4 lg:order-last mx-auto'>
         <Image
         width={587}
@@ -42,14 +42,12 @@ export const Course = () => {
         <h1 className='xl:text-3xl lg:text-2xl lg:my-12 mb-6 mt-12 text-xl font-mabry leading-tight uppercase'>
           Фитнес-формирующий массаж лица
         </h1>
-        <button
+        <ActionBtn
         onClick={openPopUp}
-        className='xl:text-xl lg:text-l xl:py-3 xl:pl-9 xl:pr-6 lg:py-1 xl:w-80 lg:w-64 my-4 pl-6 pr-4 w-56 text-md flex justify-between items-center font-mabry bg-yellow rounded-full uppercase'>
+        withArrow={true}
+        >
           Записаться
-          <div className='xl:scale-100 scale-75'>
-            <Arrow />
-          </div>
-        </button>
+        </ActionBtn>
       </div>
     </div>
     <CourseDescription />

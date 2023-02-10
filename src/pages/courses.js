@@ -1,21 +1,17 @@
-import { Header } from "@components/Header";
 import Arrow from "@components/Arrow";
 import ArrowDown from "@components/ArrowDown";
 import Image from "next/image";
-import InstructorsImage from '../public/images/grid-instructor-image.png'
-import RoubleSymbol from "@components/RoubleSymbol";
+import InstructorsImage from '../public/images/grid-instructor-image.png';
 import Link from "next/link";
+import ActionBtn from "@components/ActionBtn";
 
 export default function Courses() {
     return (
         <>
-            <div className="xl:mx-auto max-w-screen-xl xl:mt-28 mt-20">
-                <div className="flex">
+            <div className="xl:mx-auto max-w-screen-xl xl:mt-40 mt-32">
+                <div className="flex items-center">
                     <h1 className='xl:text-3xl xl:my-12 my-4 text-xl font-mabry leading-tight grow uppercase'>Курсы обучения</h1>
-                    <button className='xl:text-l xl:py-3 xl:px-7 xl:w-96 my-auto px-3 text-md flex justify-between items-center font-mabry bg-yellow rounded-full uppercase'>
-                        Скачать календарь
-                        <div className='xl:scale-100 scale-75'><Arrow /></div>
-                    </button>
+                    <ActionBtn withArrow={true}>Скачать календарь</ActionBtn>
                 </div>
                 <div className="flex gap-6">
                     <div className="grow xl:h-16 xl:text-l xl:pl-10 xl:pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
@@ -52,12 +48,9 @@ export default function Courses() {
                             <div className="overflow-hidden rounded-full mr-4"><Image src={InstructorsImage} alt='Instructors Image'></Image></div>
                             Романенко Диана
                         </Link>
-                        <div className="font-light flex items-center">
-                            8000
-                            <div>
-                                <RoubleSymbol />
-                            </div>
-                        </div>
+                        <p className="font-light">
+                            8000 руб.
+                        </p>
                         <div className="font-mabry text-center uppercase"><Link href='/course-about'>Записаться</Link></div>
                     </div> 
                 </div>

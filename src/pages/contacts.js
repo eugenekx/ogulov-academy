@@ -2,7 +2,7 @@ import PlayButton from "@components/PlayButton";
 
 export default function Contacts () {
 	return (
-        <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto xl:mt-36 mt-28 mb-24 px-4 gap-10 grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
+        <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto xl:mt-40 mt-32 mb-24 px-4 gap-10 grid lg:grid-cols-2 grid-cols-1 justify-center items-center">
             <div className='order-last lg:order-first'>
                 <h1 className="font-mabry text-3xl xl:mb-16 mb-10 text-left uppercase">
                     Контакты
@@ -46,7 +46,7 @@ export default function Contacts () {
                     </p>
                 </div>
             </div>
-            <div className="w-full pt-[56.25%] overflow-hidden relative lg:rounded-3xl">
+            <div className="w-full pt-[56.25%] overflow-hidden relative rounded-3xl">
                 <iframe
                 className='absolute top-0 bottom-0 left-0 right-0 h-full'
                 width={'100%'}

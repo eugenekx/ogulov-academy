@@ -1,6 +1,5 @@
-import Arrow from "@components/Arrow";
-import { Header } from "@components/Header";
 import Link from "next/link";
+import ActionBtn from "@components/ActionBtn";
 
 
 export default function Register() {
@@ -34,13 +33,11 @@ export default function Register() {
                     placeholder="Подтвердить пароль"
                     />
                 </div>
-                <button type='submit'
-                className='lg:text-xl lg:py-3 lg:pl-10 lg:pr-6 ml-auto mr-0 pl-6 pr-3 text-md flex items-center font-mabry bg-yellow rounded-full uppercase'>
-                    Отправить
-                    <div className='lg:scale-100 scale-75 lg:ml-10 ml-4'>
-                        <Arrow />
-                    </div>
-                </button>
+                <div className="ml-auto mr-0">
+                    <ActionBtn withArrow={true}>
+                        Отправить
+                    </ActionBtn>
+                </div>
             </form>
             <div className="text-center lg:text-l text-m font-proxima my-12">
                 Уже есть аккаунт?
