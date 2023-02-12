@@ -48,7 +48,7 @@ export default function Contacts () {
             </div>
             <div className="w-full pt-[56.25%] overflow-hidden relative rounded-3xl">
                 <iframe
-                className='absolute top-0 bottom-0 left-0 right-0 h-full'
+                className='absolute top-0 bottom-0 left-0 right-0 h-full rounded-3xl'
                 width={'100%'}
                 src="https://www.youtube.com/embed/dQw4w9WgXcQ"
                 title="YouTube video player"

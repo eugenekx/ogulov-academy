@@ -3,13 +3,22 @@ import InstructorsImage from '../public/images/grid-instructor-image.png';
 import ArrowDown from "./ArrowDown";
 import Arrow from "./Arrow";
 import CrossIcon from "./CrossIcon";
-import { useEffect } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 
-export const PopUp = (closePopUp, openPopUpTween, ...props) => {
+export const PopUp = (openPopUp, isPopUpOpen,setIsPopUpOpen, ...props) => {
+
     function openPopUpTween () {
-        gsap.fromTo("[data-animation='pop-up']", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1 });
+        gsap.fromTo("[data-animation='pop-up']", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .3 });
     };
+
+    function closePopUpTween (onComplete) {
+        gsap.fromTo("[data-animation='pop-up']", { scale: 1, opacity: 1 }, { scale: 0, opacity: 0, onComplete, duration: .3 });
+      };
+
+    function closePopUp ({closePopUpTween}) {
+        closePopUpTween(() => setIsPopUpOpen(false))
+      };
 
     useEffect(() => {
 		openPopUpTween();
@@ -22,7 +31,9 @@ export const PopUp = (closePopUp, openPopUpTween, ...props) => {
                 <h1 className="grow font-mabry xl:text-3xl lg:text-2xl text-xl lg:mb-14 mb-10 text-left uppercase">
                     Запись на курс
                 </h1>
-                <CrossIcon onClick={closePopUp} />
+                <div onClick={closePopUp}>
+                    <CrossIcon />
+                </div>
             </div>
             
             <div className="xl:mb-14 lg:mb-8">
