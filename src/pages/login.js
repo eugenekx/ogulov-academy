@@ -9,7 +9,7 @@ export default function Login() {
             </h1>
             <form className="lg:w-140 w-64 flex flex-col lg:gap-8 gap-4 mx-auto my-12">
                 <div className="grow lg:h-16 h-12 lg:text-xl xl:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='email'
                     id="email"
                     name="email"
@@ -17,7 +17,7 @@ export default function Login() {
                     />
                 </div>
                 <div className="grow lg:h-16 h-12 lg:text-xl xl:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='password'
                     id="password"
                     name="password"

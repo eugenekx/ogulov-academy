@@ -56,11 +56,11 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 	}
 
 	function closeDropdownTween (onComplete) {
-        gsap.to("[data-animation='dropdown']", { y: -300, opacity: 0, onComplete });
+        gsap.to("[data-animation='dropdown']", { y: 80, opacity: 0, onComplete, duration: .3});
     };
 
 	function openDropdownTween () {
-        gsap.fromTo("[data-animation='dropdown']", { y: -300, opacity: 0 }, { y: 0, opacity: 1 });
+        gsap.fromTo("[data-animation='dropdown']", { y: 80, opacity: 0 }, { y: 0, opacity: 1, duration: .3 });
     };
 
 	return (

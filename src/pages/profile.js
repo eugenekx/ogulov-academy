@@ -13,7 +13,7 @@ export default function Profile () {
                     ФИО
                 </h3>
                 <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='text'
                     id="name"
                     name="name"
@@ -26,7 +26,7 @@ export default function Profile () {
                     Телефон
                 </h3>
                 <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='tel'
                     id="phone"
                     name="phone"
@@ -40,7 +40,7 @@ export default function Profile () {
                     Эл. почта
                 </h3>
                 <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='email'
                     id="email"
                     name="email"
@@ -53,7 +53,7 @@ export default function Profile () {
                     Адрес
                 </h3>
                 <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='text'
                     id="address"
                     name="address"
@@ -66,7 +66,7 @@ export default function Profile () {
                     Образование
                 </h3>
                 <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase"
+                    <input className="placeholder-black grow uppercase focus:outline-none"
                     type='text'
                     id="education"
                     name="education"
