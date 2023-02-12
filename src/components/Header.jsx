@@ -2,7 +2,7 @@ import Link from "next/link";
 import Logo from "./Logo";
 import Burger from "./Burger";
 import ProfileIcon from "./profileIcon";
-import { useEffect, useLayoutEffect, useState } from "react";
+import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 
 export  const Dropdown = ({ openDropdownTween }) => {
