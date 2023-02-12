@@ -11,11 +11,22 @@ export const Course = () => {
   const [isPopUpOpen, setIsPopUpOpen] = useState(false);
 
   function openPopUp () {
+    const body = document.querySelector('body');
+    
+    body.style.overflow='hidden';
     setIsPopUpOpen(true)
   };
 
   function openPopUpTween () {
     gsap.fromTo("[data-animation='pop-up']", { scale: 0, opacity: 0 }, { scale: 1, opacity: 1, duration: .3 });
+  };
+
+  function closePopUpTween (onComplete) {
+    gsap.fromTo("[data-animation='pop-up']", { scale: 1, opacity: 1 }, { scale: 0, opacity: 0, onComplete, duration: .3 });
+  };
+
+  function closePopUp () {
+    closePopUpTween(() => setIsPopUpOpen(false))
   };
 
   
@@ -24,6 +35,7 @@ export const Course = () => {
     <>
     {isPopUpOpen && <PopUp
     openPopUp={openPopUp}
+    //closePopUp={closePopUp}
     openPopUpTween={openPopUpTween}
     isPopUpOpen={isPopUpOpen}
      />}
