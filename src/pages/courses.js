@@ -28,7 +28,7 @@ export default function Courses() {
                         name="instructor-search"
                         placeholder="Преподаватель"
                         />
-                        <div className="lg:scale-100 scale-50">
+                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
                             <ArrowDown />
                         </div>
                     </div>
@@ -39,7 +39,7 @@ export default function Courses() {
                         name="city-search"
                         placeholder="Город"
                         />
-                        <div className="lg:scale-100 scale-50">
+                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
                             <ArrowDown />
                         </div>
                     </div>                    
@@ -50,7 +50,7 @@ export default function Courses() {
                         name="course-search"
                         placeholder="Курс"
                         />
-                        <div className="lg:scale-100 scale-50">
+                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
                             <ArrowDown />
                         </div>
                     </div>
@@ -61,7 +61,7 @@ export default function Courses() {
                         id="course-search"
                         name="course"
                         placeholder="Поиск по названию"></input>
-                        <div className="lg:scale-100 scale-50">
+                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
                             <Arrow />
                         </div>
                     </div>

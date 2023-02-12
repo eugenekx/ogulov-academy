@@ -72,7 +72,7 @@ export default function Profile () {
                     name="education"
                     placeholder="Высшее медицинское"
                     />
-                    <div className="lg:scale-100 scale-50">
+                    <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
                         <ArrowDown />
                     </div>
                 </div>

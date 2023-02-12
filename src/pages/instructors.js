@@ -45,7 +45,7 @@ export default function Instructors() {
                     </div>
                 </div>
                 <button className='xl:my-24 xl:text-xl my-10 text-m flex items-center font-mabry mx-auto uppercase'>Показать еще
-                    <div className='xl:scale-100 scale-75'><ArrowDown /></div>
+                    <div className='xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6'><ArrowDown /></div>
                 </button>
             </div>
         </>

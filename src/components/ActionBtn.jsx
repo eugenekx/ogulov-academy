@@ -9,7 +9,7 @@ function ActionBtn ({children, withArrow, onClick, ...props}) {
             :"lg:pl-8 lg:pr-8 xl:h-16 lg:h-14 h-10 pl-6 pr-6 flex items-center bg-yellow rounded-full lg:text-l text-m font-mabry uppercase"
             }>
             {children}
-            {withArrow && <div className='xl:scale-100 lg:scale-75 scale-[66%] xl:ml-8 lg:ml-6 ml-2'>
+            {withArrow && <div className='xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-8 h-8 xl:ml-8 lg:ml-6 ml-2'>
                 <Arrow />
             </div>}
         </button>

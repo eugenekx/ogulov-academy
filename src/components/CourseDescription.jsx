@@ -24,7 +24,7 @@ export const CourseDescription = ({children}) => {
                 </ul> 
             </div>
             <button onClick={toggleBtn} className='xl:my-5 flex items-center font-mabry my-2 uppercase'>Читать полностью
-            <div className='xl:scale-100 scale-50'><ArrowDown rotation={isMoreShown ? 180 : 0} /></div>
+            <div className='xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6'><ArrowDown rotation={isMoreShown ? 180 : 0} /></div>
             </button>
         </div>
     )
