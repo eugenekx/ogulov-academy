@@ -20,8 +20,8 @@ export  const Dropdown = ({ openDropdownTween }) => {
 			link: '/profile',
 		},
 		{
-			name: 'Выйти',
-			link: '/',
+			name: 'Мои курсы',
+			link: '/my-courses',
 		},
 	];
 

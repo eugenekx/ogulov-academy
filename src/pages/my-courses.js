@@ -84,11 +84,11 @@ export default function myCourses () {
                             <p className="font-light">10:00 — 15:00</p>
                         </div>
                         <div>Тема курса/семинара</div>
-                        <Link href='/course-about'>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</Link>
+                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
                         <div>Преподаватель</div>
-                        <Link href='/aboutinstructor' className="flex items-center font-light">
+                        <div className="flex items-center font-light">
                             Романенко Диана
-                        </Link>
+                        </div>
                         <div>Стоимость</div>
                         <p className="font-light">
                             8000 руб.

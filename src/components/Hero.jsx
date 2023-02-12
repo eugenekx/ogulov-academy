@@ -1,5 +1,6 @@
 import Link from "next/link";
 import Arrow from "@components/Arrow";
+import ActionBtn from "./ActionBtn";
 
 export const Hero = () => {
 	return (
@@ -23,12 +24,12 @@ export const Hero = () => {
 							Ассоциации специалистов висцеральных практик
 						</Link>
 					</div>
-					<button className="xl:text-l xl:py-3 xl:px-7 xl:w-72 w-52 pl-6 pr-4 text-md flex justify-between items-center font-mabry bg-yellow rounded-full">
-						ПОДРОБНЕЕ
-						<div className="xl:scale-100 scale-75">
-							<Arrow />
-						</div>
-					</button>
+					<div className="ml-0 mr-auto">
+						<ActionBtn withArrow={true}>
+							Подробнее
+						</ActionBtn>
+					</div>
+					
 				</div>
 			</div>
 			<div className="absolute bottom-10 w-full flex justify-center gap-2">
