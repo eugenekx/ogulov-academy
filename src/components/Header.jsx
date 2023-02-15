@@ -66,12 +66,12 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 	return (
 		<div onMouseLeave={closeDropdown} className="fixed w-full top-0 mx-auto text-md font-mabry z-40 bg-white h-20 xl:h-28">
 			<div className="xl:max-w-screen-xl lg:max-w-screen-lg lg:mx-auto px-4 flex lg:gap-8 h-full justify-between items-center relative">
-				<div className="xl:w-16 w-12">
+				<Link href='/' className="xl:w-16 w-12">
 					<Logo />
-				</div>
-				<Link className="lg:hidden text-md uppercase" href="/">
-					Академия Огулова
 				</Link>
+				<div className="lg:hidden text-md uppercase">
+					Академия Огулова
+				</div>
 				<div className="lg:hidden">
 					<Burger onClick={toggleMenu} />
 				</div>

@@ -12,7 +12,7 @@ export default function Profile () {
                 <h3 className="font-mabry lg:mb-4 mb-2 uppercase lg:text-m text-sm">
                     ФИО
                 </h3>
-                <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow uppercase focus:outline-none"
                     type='text'
                     id="name"
@@ -25,7 +25,7 @@ export default function Profile () {
                 <h3 className="font-mabry lg:mb-4 mb-2 uppercase lg:text-m text-sm">
                     Телефон
                 </h3>
-                <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow uppercase focus:outline-none"
                     type='tel'
                     id="phone"
@@ -39,7 +39,7 @@ export default function Profile () {
                 <h3 className="font-mabry lg:mb-4 mb-2 uppercase lg:text-m text-sm">
                     Эл. почта
                 </h3>
-                <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow uppercase focus:outline-none"
                     type='email'
                     id="email"
@@ -52,7 +52,7 @@ export default function Profile () {
                 <h3 className="font-mabry lg:mb-4 mb-2 uppercase lg:text-m text-sm">
                     Адрес
                 </h3>
-                <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
+                <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                     <input className="placeholder-black grow uppercase focus:outline-none"
                     type='text'
                     id="address"
@@ -65,16 +65,14 @@ export default function Profile () {
                 <h3 className="font-mabry lg:mb-4 mb-2 uppercase lg:text-m text-sm">
                     Образование
                 </h3>
-                <div className="xl:h-16 lg:h-14 h-10 lg:text-l lg:px-10 px-6 flex items-center font-mabry border-2 border-black rounded-full">
-                    <input className="placeholder-black grow uppercase focus:outline-none"
+                <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
+                    <input className="placeholder-black grow uppercase focus:outline-none overflow-hidden"
                     type='text'
                     id="education"
                     name="education"
                     placeholder="Высшее медицинское"
                     />
-                    <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
-                        <ArrowDown />
-                    </div>
+                    <ArrowDown />
                 </div>
             </div>
             <div className="float-right">

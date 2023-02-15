@@ -46,12 +46,28 @@ export const Menu = ({toggleMenu, ...props}) => {
 			name: "Контакты",
 			link: "/contacts",
 		},
+		{
+			name: 'Вход',
+			link: '/login',
+		},
+		{
+			name: 'Регистрация',
+			link: '/register',
+		},
+		{
+			name: 'Изменить профиль',
+			link: '/profile',
+		},
+		{
+			name: 'Мои курсы',
+			link: '/my-courses',
+		},
 	];
 
 	return (
 		<div
 			data-animation="menu"
-			className="xl:hidden w-full h-full fixed top-0 z-20 pt-36 pl-4 flex flex-col gap-16 items-start bg-white font-mabry text-xl uppercase"
+			className="xl:hidden w-full h-full fixed top-0 z-20 pt-32 pl-4 flex flex-col gap-10 items-start bg-white font-mabry text-md uppercase"
 		>
 			{menuItems.map((menuItems, i) => (
 				<Link onClick={toggleMenu} key={i} href={menuItems.link}>

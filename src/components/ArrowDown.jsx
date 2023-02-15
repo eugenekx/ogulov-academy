@@ -1,6 +1,6 @@
 const ArrowDown = (props) => {
   return (
-    <div className={props.rotation === 180 ? "rotate-180" : ""}>
+    <div className={props.rotation === 180 ? "rotate-180 xl:w-12 xl:h-12 lg:w-8 lg:h-8 w-6 h-6" : "xl:w-12 xl:h-12 lg:w-8 lg:h-8 w-6 h-6"}>
         <svg
       xmlns="http://www.w3.org/2000/svg"
       width={"100%"}

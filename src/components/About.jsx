@@ -3,8 +3,8 @@ import Link from "next/link";
 export const About = () => {
 	return (
 		<div className="xl:text-xl xl:my-14 xl:mx-auto max-w-screen-xl text-s font-proxima my-7 mx-4  pt-56">
-			<h2 className="xl:text-2xl text-xl text-center font-mabry my-12">
-				О КУРСЕ
+			<h2 className="xl:text-2xl text-xl text-center font-mabry my-12 uppercase">
+				О центре
 			</h2>
 			<div className="mask">
 				Огулов Центр – это учебно-оздоровительный центр, который был

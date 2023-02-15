@@ -1,6 +1,9 @@
 import Link from "next/link";
 import Logo from "./Logo";
 import LinkArrow from "./LinkArrow";
+import InstagramLogo from "./InstagramLogo";
+import VkLogo from "./VkLogo";
+import FacebookLogo from "./FacebookLogo";
 
 export const Footer = () => {
 	return (
@@ -18,69 +21,57 @@ export const Footer = () => {
 						<div className="text-s xl:text-m mb-4 uppercase">
 							Ссылки
 						</div>
-						<Link className="flex items-center uppercase" href="/">
+						<Link className="flex items-center gap-2 uppercase" href="/">
 							Клиника
-							<div className="mt-1 ml-2">
+							<div className="w-3 h-3">
 								<LinkArrow />
 							</div>
 						</Link>
 						<Link
-							className="flex items-center uppercase"
+							className="flex items-center gap-2 uppercase"
 							href="/courses"
 						>
 							Академия
-							<div className="mt-1 ml-2">
+							<div className="w-3 h-3">
 								<LinkArrow />
 							</div>
 						</Link>
 						<Link
-							className="flex items-center uppercase"
+							className="flex items-center gap-2 uppercase"
 							href="/instructors"
 						>
 							Магазин
-							<div className="mt-1 ml-2">
+							<div className="w-3 h-3">
 								<LinkArrow />
 							</div>
 						</Link>
 						<Link
-							className="flex items-center uppercase"
+							className="flex items-center gap-2 uppercase"
 							href="/contacts"
 						>
 							Академия-онлайн
-							<div className="mt-1 ml-2">
+							<div className="w-3 h-3">
 								<LinkArrow />
 							</div>
 						</Link>
 					</div>
-					<div>
-						<div className="text-s xl:text-m mb-4 uppercase">
-							Соц. сети
-						</div>
-						<Link className="flex items-center uppercase" href="/">
-							Instagram
-							<div className="mt-1 ml-2">
-								<LinkArrow />
-							</div>
-						</Link>
-						<Link
-							className="flex items-center uppercase"
-							href="/courses"
-						>
-							Facebook
-							<div className="mt-1 ml-2">
-								<LinkArrow />
-							</div>
-						</Link>
-						<Link
-							className="flex items-center uppercase"
-							href="/instructors"
-						>
-							Vk
-							<div className="mt-1 ml-2">
-								<LinkArrow />
-							</div>
-						</Link>
-					</div>
+				</div>
+				<div className="flex gap-10 my-8">
+					<Link className="flex items-center uppercase w-12 h-12" href="https://www.instagram.com/ogulov_com/">
+						<InstagramLogo />
+					</Link>
+					<Link
+						className="flex items-center uppercase w-12 h-12"
+						href="https://vk.com/ogulov.center"
+					>
+						<VkLogo />
+					</Link>
+					<Link
+						className="flex items-center uppercase w-12 h-12"
+						href="https://www.facebook.com/ogulov.center/"
+					>
+						<FacebookLogo />
+					</Link>
 				</div>
 				<div className="uppercase">ООО «Огулов центр», 2022</div>
 				<Link href="/">Пользовательское соглашение</Link>

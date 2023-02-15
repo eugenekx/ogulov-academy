@@ -1,8 +1,9 @@
 const LinkArrow = (props) => (
     <svg
-      width={19}
-      height={19}
+      width={"100%"}
+      height={"100%"}
       fill="none"
+      viewBox="0 0 19 19"
       xmlns="http://www.w3.org/2000/svg"
       {...props}
     >

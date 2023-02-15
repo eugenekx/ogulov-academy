@@ -21,53 +21,47 @@ export default function Courses() {
                     </div>
                 </div>
                 <div className="grid lg:grid-cols-3 grid-rows-1 xl:gap-6 gap-4 w-full mt-10 mb-4">
-                    <div className="xl:h-16 lg:h-14 h-10 lg:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
-                        <input className="placeholder-black grow uppercase focus:outline-none lg:w-52 xl:w-full overflow-hidden"
+                    <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
+                        <input className="placeholder-black grow uppercase focus:outline-none overflow-hidden"
                         type='search'
                         id="instructor-search"
                         name="instructor-search"
                         placeholder="Преподаватель"
                         />
-                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
-                            <ArrowDown />
-                        </div>
+                        <ArrowDown />
                     </div>
-                    <div className="xl:h-16 lg:h-14 h-10 lg:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
+                    <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                         <input className="placeholder-black grow uppercase focus:outline-none lg:w-52 xl:w-full overflow-hidden"
                         type='search'
                         id="city-search"
                         name="city-search"
                         placeholder="Город"
                         />
-                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
-                            <ArrowDown />
-                        </div>
+                        <ArrowDown />
                     </div>                    
-                    <div className="xl:h-16 lg:h-14 h-10 lg:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
+                    <div className="xl:h-16 lg:h-12 h-10 xl:text-l pl-6 pr-4 flex items-center font-mabry border-2 border-black rounded-full">
                         <input className="placeholder-black grow uppercase focus:outline-none lg:w-52 xl:w-full overflow-hidden"
                         type='search'
                         id="course-search"
                         name="course-search"
                         placeholder="Курс"
                         />
-                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
-                            <ArrowDown />
-                        </div>
+                        <ArrowDown />
                     </div>
                 </div>
-                <div className="grow xl:h-16 lg:h-14 h-10 lg:text-l xl:my-10 lg:my-8 mt-4 pl-6 pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
+                <div className="grow xl:h-16 lg:h-12 h-10 xl:text-l xl:my-10 lg:my-8 mt-4 pl-6 pr-4 flex justify-between items-center font-mabry border-2 border-black rounded-full">
                         <input className="placeholder-black grow uppercase focus:outline-none"
                         type="search"
                         id="course-search"
                         name="course"
                         placeholder="Поиск по названию"></input>
-                        <div className="xl:w-12 xl:h-12 lg:w-10 lg:h-10 w-6 h-6">
+                        <div className="xl:w-12 xl:h-12 lg:w-8 lg:h-8 w-6 h-6">
                             <Arrow />
                         </div>
                     </div>
                 { isBigScreen &&
-                    <div className="flex flex-col">
-                        <div className="w-full xl:py-6 xl:text-md xl:my-1 grid grid-course-info xl:gap-10 lg:gap-4 font-mabry border-b-2 border-black uppercase">
+                    <div className="flex flex-col my-24">
+                        <div className="w-full py-6 xl:text-md grid grid-course-info xl:gap-10 lg:gap-4 font-mabry border-b-2 border-black uppercase">
                             <div>Дата</div>
                             <div>Тема курса/семинара</div>
                             <div>Преподаватель</div>
@@ -91,8 +85,8 @@ export default function Courses() {
                     </div>
                 }
                 { isMidScreen &&
-                    <div className="lg:my-20 flex flex-col gap-4">
-                        <div className="w-full xl:py-6 xl:text-md xl:my-1 grid grid-course-info-lg xl:gap-10 lg:gap-4 font-mabry border-b-2 border-black uppercase">
+                    <div className="my-24 flex flex-col gap-4">
+                        <div className="w-full py-6 xl:text-md grid grid-course-info-lg xl:gap-10 lg:gap-4 font-mabry border-b-2 border-black uppercase">
                             <div>Дата</div>
                             <div>Тема курса/семинара</div>
                             <div>Преподаватель</div>
@@ -117,18 +111,18 @@ export default function Courses() {
                 }
                 { isMobileScreen &&
                     <Link href='/course-about' className="my-20 grid grid-col grid-cols-2 shadow-xl rounded-3xl font-mabry px-4 py-8 gap-4">
-                        <div>Дата</div>
+                        <div className="uppercase">Дата</div>
                         <div>
                             <p>15 января</p>
                             <p className="font-light">10:00 — 15:00</p>
                         </div>
-                        <div>Тема курса/семинара</div>
+                        <div className="uppercase">Тема курса/семинара</div>
                         <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
-                        <div>Преподаватель</div>
+                        <div className="uppercase">Преподаватель</div>
                         <div className="font-light">
                             Романенко Диана
                         </div>
-                        <div>Стоимость</div>
+                        <div className="uppercase">Стоимость</div>
                         <p className="font-light">
                             8000 руб.
                         </p>

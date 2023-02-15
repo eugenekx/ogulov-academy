@@ -11,12 +11,12 @@ export default function MyCourses() {
 				Мои курсы
 			</h1>
 			{isMidScreen && (
-				<div className="my-20 xl:max-w-screen-xl lg:max-w-screen-lg xl:px-40 lg:px-20  mx-auto grid grid-cols-1">
-					<div className="py-6 text-md my-1 grid grid-my-courses-lg justify-center gap-20 font-mabry border-b-2 border-black uppercase">
+				<div className="my-20 lg:max-w-screen-lg lg:px-20 mx-auto grid grid-cols-1">
+					<div className="py-6 text-md my-1 grid grid-my-courses-lg gap-20 font-mabry border-b-2 border-black uppercase">
 						<div>Дата</div>
 						<div className="col-span-2">Название</div>
 					</div>
-					<div className="py-6 text-md my-1 grid grid-my-courses-lg justify-center gap-20 items-center font-proxima">
+					<div className="py-6 text-md my-1 grid grid-my-courses-lg gap-20 items-center font-proxima">
 						<div>
 							<p>15 января</p>
 							<p className="font-light">10:00 — 15:00</p>
@@ -25,11 +25,11 @@ export default function MyCourses() {
 							Введение в висцеральную практику. Основы анатомии и
 							физиологии человека. 2 часть
 						</Link>
-						<div className="font-mabry text-center uppercase">
+						<div className="mr-0 ml-auto font-mabry uppercase">
 							<Link href="/course-about">Просмотреть</Link>
 						</div>
 					</div>
-					<div className="py-6 text-md my-1 grid grid-my-courses-lg justify-center gap-20 items-center font-proxima">
+					<div className="py-6 text-md my-1 grid grid-my-courses-lg gap-20 items-center font-proxima">
 						<div>
 							<p>15 января</p>
 							<p className="font-light">10:00 — 15:00</p>
@@ -38,11 +38,11 @@ export default function MyCourses() {
 							Введение в висцеральную практику. Основы анатомии и
 							физиологии человека. 2 часть
 						</Link>
-						<div className="font-mabry text-center uppercase">
+						<div className="mr-0 ml-auto font-mabry uppercase">
 							<Link href="/course-about">Просмотреть</Link>
 						</div>
 					</div>
-					<div className="py-6 text-md my-1 grid grid-my-courses-lg justify-center gap-20 items-center font-proxima">
+					<div className="py-6 text-md my-1 grid grid-my-courses-lg gap-20 items-center font-proxima">
 						<div>
 							<p>15 января</p>
 							<p className="font-light">10:00 — 15:00</p>
@@ -51,7 +51,7 @@ export default function MyCourses() {
 							Введение в висцеральную практику. Основы анатомии и
 							физиологии человека. 2 часть
 						</Link>
-						<div className="font-mabry text-center uppercase">
+						<div className="mr-0 ml-auto font-mabry uppercase">
 							<Link href="/course-about">Просмотреть</Link>
 						</div>
 					</div>
@@ -62,21 +62,21 @@ export default function MyCourses() {
 					href="/course-about"
 					className="my-20 grid grid-col grid-cols-2 shadow-xl rounded-3xl font-mabry px-4 py-8 gap-4"
 				>
-					<div>Дата</div>
+					<div className="uppercase">Дата</div>
 					<div>
 						<p>15 января</p>
 						<p className="font-light">10:00 — 15:00</p>
 					</div>
-					<div>Тема курса/семинара</div>
+					<div className="uppercase">Тема курса/семинара</div>
 					<div>
 						Введение в висцеральную практику. Основы анатомии и
 						физиологии человека. 2 часть
 					</div>
-					<div>Преподаватель</div>
+					<div className="uppercase">Преподаватель</div>
 					<div className="flex items-center font-light">
 						Романенко Диана
 					</div>
-					<div>Стоимость</div>
+					<div className="uppercase">Стоимость</div>
 					<p className="font-light">8000 руб.</p>
 				</Link>
 			)}
