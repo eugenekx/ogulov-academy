@@ -5,40 +5,47 @@ import ProfileIcon from "./profileIcon";
 import { useEffect, useState } from "react";
 import { gsap } from "gsap";
 
-export  const Dropdown = ({ openDropdownTween }) => {
+export const Dropdown = ({ openDropdownTween }) => {
 	const dropdownItems = [
 		{
-			name: 'Вход',
-			link: '/login',
+			name: "Вход",
+			link: "/login",
 		},
 		{
-			name: 'Регистрация',
-			link: '/register',
+			name: "Регистрация",
+			link: "/register",
 		},
 		{
-			name: 'Изменить профиль',
-			link: '/profile',
+			name: "Изменить профиль",
+			link: "/profile",
 		},
 		{
-			name: 'Мои курсы',
-			link: '/my-courses',
+			name: "Мои курсы",
+			link: "/my-courses",
 		},
 	];
 
-    useEffect(() => {
+	useEffect(() => {
 		openDropdownTween();
 	}, []);
 
 	return (
-		<div data-animation='dropdown' className="absolute top-full right-0 font-mabry text-md text-right uppercase grid grid-flow-row min-w-max rounded-b-2xl shadow-lg overflow-hidden">
+		<div
+			data-animation="dropdown"
+			className="absolute top-full right-0 font-mabry text-m text-right uppercase grid grid-flow-row min-w-max rounded-b-2xl shadow-lg overflow-hidden"
+		>
 			{dropdownItems.map((dropdownItems, i) => (
-				<Link className="hover:bg-black hover:text-white bg-white px-4 py-2 transition-colors" key={i} href={dropdownItems.link}>
+				<Link
+					className="hover:bg-black hover:text-white bg-white px-4 py-2 transition-colors"
+					key={i}
+					href={dropdownItems.link}
+				>
 					{dropdownItems.name}
 				</Link>
 			))}
 		</div>
-	)
-}
+	);
+};
 
 export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 	const [isDropdownOpen, setIsDropdownOpen] = useState(false);
@@ -47,26 +54,38 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 		console.log(isDropdownOpen);
 	}, [isDropdownOpen]);
 
-	function openDropdown () {
-		setIsDropdownOpen(true)
-	};
+	function openDropdown() {
+		setIsDropdownOpen(true);
+	}
 
-	function closeDropdown () {
+	function closeDropdown() {
 		closeDropdownTween(() => setIsDropdownOpen(false));
 	}
 
-	function closeDropdownTween (onComplete) {
-        gsap.to("[data-animation='dropdown']", { y: 80, opacity: 0, onComplete, duration: .3});
-    };
+	function closeDropdownTween(onComplete) {
+		gsap.to("[data-animation='dropdown']", {
+			y: 80,
+			opacity: 0,
+			onComplete,
+			duration: 0.3,
+		});
+	}
 
-	function openDropdownTween () {
-        gsap.fromTo("[data-animation='dropdown']", { y: 80, opacity: 0 }, { y: 0, opacity: 1, duration: .3 });
-    };
+	function openDropdownTween() {
+		gsap.fromTo(
+			"[data-animation='dropdown']",
+			{ y: 80, opacity: 0 },
+			{ y: 0, opacity: 1, duration: 0.3 }
+		);
+	}
 
 	return (
-		<div onMouseLeave={closeDropdown} className="fixed w-full top-0 mx-auto text-md font-mabry z-40 bg-white h-20 xl:h-28">
+		<div
+			onMouseLeave={closeDropdown}
+			className="fixed w-full top-0 mx-auto text-md font-mabry z-40 bg-white h-20 xl:h-28"
+		>
 			<div className="xl:max-w-screen-xl lg:max-w-screen-lg lg:mx-auto px-4 flex lg:gap-8 h-full justify-between items-center relative">
-				<Link href='/' className="xl:w-16 w-12">
+				<Link href="/" className="xl:w-16 w-12">
 					<Logo />
 				</Link>
 				<div className="lg:hidden text-md uppercase">
@@ -90,9 +109,10 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 				<div onMouseEnter={openDropdown} className="hidden lg:block">
 					<ProfileIcon />
 				</div>
-				{isDropdownOpen && <Dropdown openDropdownTween={openDropdownTween} />}
+				{isDropdownOpen && (
+					<Dropdown openDropdownTween={openDropdownTween} />
+				)}
 			</div>
-			
 		</div>
 	);
 };
