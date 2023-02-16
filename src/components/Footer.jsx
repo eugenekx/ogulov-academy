@@ -21,7 +21,7 @@ export const Footer = () => {
 						<div className="text-s xl:text-m mb-4 uppercase">
 							Ссылки
 						</div>
-						<Link className="flex items-center gap-2 uppercase" href="/">
+						<Link className="flex items-center gap-2 uppercase" href="https://clinic.ogulov.com/">
 							Клиника
 							<div className="w-3 h-3">
 								<LinkArrow />
@@ -29,7 +29,7 @@ export const Footer = () => {
 						</Link>
 						<Link
 							className="flex items-center gap-2 uppercase"
-							href="/courses"
+							href="https://academy.ogulov.com/"
 						>
 							Академия
 							<div className="w-3 h-3">
@@ -38,7 +38,7 @@ export const Footer = () => {
 						</Link>
 						<Link
 							className="flex items-center gap-2 uppercase"
-							href="/instructors"
+							href="https://shop.ogulov.com/"
 						>
 							Магазин
 							<div className="w-3 h-3">
@@ -56,18 +56,19 @@ export const Footer = () => {
 						</Link>
 					</div>
 				</div>
-				<div className="flex gap-10 my-8">
-					<Link className="flex items-center uppercase w-12 h-12" href="https://www.instagram.com/ogulov_com/">
+				<div className="flex gap-4 my-8">
+					<Link className="flex items-center uppercase w-6 h-6"
+					href="https://www.instagram.com/ogulov_com/">
 						<InstagramLogo />
 					</Link>
 					<Link
-						className="flex items-center uppercase w-12 h-12"
+						className="flex items-center uppercase w-6 h-6"
 						href="https://vk.com/ogulov.center"
 					>
 						<VkLogo />
 					</Link>
 					<Link
-						className="flex items-center uppercase w-12 h-12"
+						className="flex items-center uppercase w-6 h-6"
 						href="https://www.facebook.com/ogulov.center/"
 					>
 						<FacebookLogo />

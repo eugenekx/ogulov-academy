@@ -13,9 +13,9 @@ export default function Courses() {
     
     return (
         <>
-            <div className="mx-auto xl:max-w-screen-xl lg:max-w-screen-lg px-4 xl:mt-40 lg:mt-32 mt-24">
+            <div className="mx-auto xl:max-w-screen-xl lg:max-w-screen-lg px-4 xl:my-56 lg:my-40 my-32">
                 <div className="grid lg:grid-flow-col grid-flow-row items-center">
-                    <h1 className='xl:text-3xl lg:text-2xl text-xl lg:my-12 my-4 font-mabry leading-tight grow uppercase'>Курсы обучения</h1>
+                    <h1 className='xl:text-3xl lg:text-2xl text-xl xl:my-12 lg:my-10 my-4 font-mabry leading-tight grow uppercase'>Курсы обучения</h1>
                     <div className="lg:float-right lg:ml-auto lg:mr-0">
                         <ActionBtn withArrow={true}>Скачать календарь</ActionBtn>
                     </div>
@@ -112,18 +112,18 @@ export default function Courses() {
                 { isMobileScreen &&
                     <Link href='/course-about' className="my-20 grid grid-col grid-cols-2 shadow-xl rounded-3xl font-mabry px-4 py-8 gap-4">
                         <div className="uppercase">Дата</div>
-                        <div>
+                        <div className="font-proxima">
                             <p>15 января</p>
                             <p className="font-light">10:00 — 15:00</p>
                         </div>
                         <div className="uppercase">Тема курса/семинара</div>
-                        <div>Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
+                        <div className="font-proxima">Введение в висцеральную практику. Основы анатомии и физиологии человека. 2 часть</div>
                         <div className="uppercase">Преподаватель</div>
-                        <div className="font-light">
+                        <div className="font-light font-proxima">
                             Романенко Диана
                         </div>
                         <div className="uppercase">Стоимость</div>
-                        <p className="font-light">
+                        <p className="font-light font-proxima">
                             8000 руб.
                         </p>
                     </Link>

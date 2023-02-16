@@ -4,7 +4,7 @@ import HeroImage from '/public/images/clinic.png'
 
 export const Slider = () => {
 	return (
-		<div>
+		<div className="xl:mt-56 lg:mt-40 mt-32">
 			<div className="flex gap-12 mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg justify-around items-center">
 				<div className="hidden w-11 shrink-0 lg:flex justify-start rotate-180">
 					<Arrow />

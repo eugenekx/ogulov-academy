@@ -39,7 +39,7 @@ export default function CourseAbout () {
     isPopUpOpen={isPopUpOpen}
     closePopUpTween={closePopUpTween}
      />}
-    <div className='mx-auto px-4 xl:mt-40 mt-32 mb-32 xl:max-w-screen-xl lg:max-w-screen-lg grid lg:grid-cols-9 lg:gap-20 items-center'>
+    <div className='mx-auto px-4 xl:my-56 lg:my-40 my-32 xl:max-w-screen-xl lg:max-w-screen-lg grid lg:grid-cols-9 lg:gap-20 items-center'>
       <div className='overflow-hidden rounded-3xl lg:col-span-4 lg:order-last mx-auto'>
         <Image
         width={587}

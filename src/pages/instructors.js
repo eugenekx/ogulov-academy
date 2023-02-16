@@ -8,7 +8,7 @@ import ActionBtn from "@components/ActionBtn";
 export default function Instructors() {
     return (
         <>
-            <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4 xl:mb-14 xl:mt-40 mt-32">
+            <div className="xl:max-w-screen-xl lg:max-w-screen-lg mx-auto px-4 xl:my-56 lg:my-40 my-32">
                 <div className="flex lg:flex-row flex-col-reverse gap-4 items-center mx-auto">
                     <div className="lg:w-1/2 xl:mx-0 xl:my-0 my-10">
                         <h1 className='xl:text-3xl lg:text-2xl xl:my-12 my-4 text-xl font-mabry leading-tight grow uppercase'>
@@ -37,7 +37,7 @@ export default function Instructors() {
                     
                 </div>
             </div>
-            <div className="mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg my-10">
+            <div className="mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg xl:my-56 lg:my-40 my-32">
                 <div className='xl:my-28 xl:max-w-screen-xl lg:max-w-screen-lg max-w-[587px] font-proxima mx-auto'>
                     <div className="grid lg:grid-cols-2 grid-cols-1 gap-4">
                         <InstructorsCard />

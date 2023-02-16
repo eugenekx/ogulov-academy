@@ -3,7 +3,7 @@ import ActionBtn from "@components/ActionBtn";
 
 export default function Profile () {
   return (
-    <div className='xl:max-w-4xl lg:max-w-4xl max-w-md lg:px-28 px-4 mx-auto xl:mt-40 mt-32 lg:mb-56 mb-36'>
+    <div className='xl:max-w-4xl lg:max-w-4xl max-w-md lg:px-28 px-4 mx-auto xl:mt-56 xl:mb-80 lg:mt-40 lg:mb-72 mt-32 mb-52'>
         <h1 className='xl:text-3xl lg:text-2xl text-l uppercase my-12 font-mabry text-center'>
             Изменить профиль
         </h1>

@@ -4,7 +4,7 @@ import ActionBtn from "@components/ActionBtn";
 
 export default function Register() {
 	return (
-        <div className="max-w-screen-xl mx-auto my-52 px-4">
+        <div className="max-w-screen-xl mx-auto xl:my-56 lg:my-40 my-32 px-4">
             <h1 className="font-mabry lg:text-3xl text-xl text-center my-16 uppercase">
                 Регистрация
             </h1>

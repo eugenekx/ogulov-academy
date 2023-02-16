@@ -8,9 +8,9 @@ export const CourseDescription = ({children}) => {
     };
 
     return (
-        <div className='xl:text-xl my-28 lg:text-l xl:max-w-screen-xl lg:max-w-screen-lg text-m font-proxima mx-auto px-4'>
-            <h2 className='xl:text-2xl text-xl text-center font-mabry mb-10'>О КУРСЕ</h2>
-            <div className='mask'>
+        <div className='xl:text-xl lg:text-l xl:max-w-screen-xl max-w-screen-md text-m font-proxima mx-auto xl:my-56 lg:my-40 my-32 px-4'>
+            <h2 className='xl:text-2xl text-xl text-center font-mabry xl:mb-12 mb-10'>О КУРСЕ</h2>
+            <div className='mask font-light'>
                 <p>Самая востребованная и популярная техника массажа Александра Ермолаева на рынке России, СНГ и Зарубежья. Авторская массажная технология.</p>
                 <ul className='list-disc list-inside'>Какой эффект:
                     <li>Ярко выраженный результат уже после первой процедуры.</li>

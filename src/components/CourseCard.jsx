@@ -15,7 +15,7 @@ export const CourseCard = () => {
 				<h2 className="text-md font-mabry mb-6 leading-tight uppercase">
 					Оздоровительный, косметологический и медицинский гуаша
 				</h2>
-				<p className="text-s font-proxima mb-6">
+				<p className="text-s font-proxima mb-6 font-light">
 					Слово «Гуаша» состоит из двух иероглифов древнекитайского
 					языка. Дословно они переводятся как «Гуа-скрести,
 					выскребать» и «Ша-болезнь, застой». В Традиционной Китайской

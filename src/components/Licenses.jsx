@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export const Licenses = () => {
 	return (
-		<div className="mx-auto max-w-screen-xl pt-56 mb-36 ">
+		<div className="mx-auto max-w-screen-xl xl:my-56 lg:my-40 my-32">
 			<h1 className="xl:text-3xl mb-14 text-xl font-mabry leading-tight text-center uppercase">
 				Лицензии и сертификаты
 			</h1>
