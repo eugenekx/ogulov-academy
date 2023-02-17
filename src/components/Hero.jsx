@@ -17,7 +17,7 @@ export const Hero = () => {
 					<div className="xl:text-3xl text-xl font-mabry leading-tight uppercase">
 						Учебный центр
 					</div>
-					<div className="text-m font-proxima mt-8 leading-normal mb-6">
+					<div className="text-m font-proxima mt-8 leading-normal mb-6 font-light">
 						Лекции, мастер-классы, семинары по оздоровлению
 						организма от ведущих специалистов&nbsp;
 						<Link href="/" className="underline underline-offset-4">
@@ -25,11 +25,8 @@ export const Hero = () => {
 						</Link>
 					</div>
 					<div className="ml-0 mr-auto">
-						<ActionBtn withArrow={true}>
-							Подробнее
-						</ActionBtn>
+						<ActionBtn withArrow={true}>Подробнее</ActionBtn>
 					</div>
-					
 				</div>
 			</div>
 			<div className="absolute bottom-10 w-full flex justify-center gap-2">
