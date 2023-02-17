@@ -16,8 +16,8 @@ export default function Document() {
 			></meta>
 			<meta name="image" content="/og.png"></meta>
 			<meta itemprop="image" content="/og.png"></meta>
-			<meta name="twitter:card" content="summary"></meta>
-			<meta name="twitter:image:src" content="/og.png"></meta>
+			<meta name="twitter:card" content="summary_large_image" />
+			<meta name="twitter:image" content="/og.png" />
 			<meta name="og:image" content="/og.png"></meta>
 			<meta name="og:type" content="website"></meta>
 			<body>
