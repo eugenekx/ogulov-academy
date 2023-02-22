@@ -27,10 +27,9 @@ export const CourseCard = () => {
 					материала, но намного больше различий в проведении самой
 					лечебной процедуры.
 				</p>
-				<div className="grid grid-cols-2 gap-y-2 gap-x-8 items-center text-s font-proxima">
-					<div>Преподаватель</div>
-					<div>Уровень подготовки</div>
-					<div className="flex items-center font-mabry uppercase">
+				<div className="text-s font-proxima">
+					<div className="mb-2">Преподаватель</div>
+					<div className="flex items-center font-mabry uppercase mb-6">
 						<div className="w-10 overflow-hidden rounded-full mr-2">
 							<Image
 								src={InstructorsImage}
@@ -39,6 +38,7 @@ export const CourseCard = () => {
 						</div>
 						Романенко Д. В.
 					</div>
+					<div className="mb-2">Уровень подготовки</div>
 					<div className="flex items-center font-mabry uppercase">
 						Начальный
 					</div>
