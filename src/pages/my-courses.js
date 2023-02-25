@@ -6,7 +6,7 @@ export default function MyCourses() {
 	const isMobileScreen = useMediaQuery({ query: "(max-width: 1023px)" });
 
 	return (
-		<div className="xl:max-w-screen-xl px-4 mx-auto xl:my-56 lg:my-40 my-32">
+		<div className="xl:max-w-screen-xl min-h-screen px-4 mx-auto xl:my-56 lg:my-40 my-32">
 			<h1 className="xl:text-3xl lg:text-2xl text-l uppercase my-12 font-mabry text-center">
 				Мои курсы
 			</h1>
