@@ -3,9 +3,9 @@ import Link from "next/link";
 export const About = () => {
 	return (
 		<div className="xl:text-xl xl:my-14 mx-auto xl:max-w-screen-xl max-w-screen-md text-s font-proxima px-4 pt-8">
-			<h2 className="xl:text-2xl text-xl text-center font-mabry my-12 uppercase">
+			<h1 className="xl:text-3xl mb-14 text-xl font-mabry leading-tight text-center uppercase">
 				О центре
-			</h2>
+			</h1>
 			<div className="mask font-light">
 				Огулов Центр – это учебно-оздоровительный центр, который был
 				создан 19 октября 1995 года Огуловым Александром Тимофеевичем.

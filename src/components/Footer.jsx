@@ -21,13 +21,17 @@ export const Footer = () => {
 								</div>
 								<div className="uppercase text-m font-mabry">Академия Огулова</div>
 							</Link>
-							<div className="font-proxima text-m w-64">
+							<div className="font-proxima font-normal text-m w-64">
 								123103, Москва, проспект Маршала Жукова, 78 к2
 							</div>
 							<a className="font-mabry text-l"
 								href="tel:+79035706688"
 							>
 								+7 (903) 570-66-88
+							</a>
+							<a className="font-proxima font-normal text-m"
+							href="mailto:academy@ogulov.org">
+								academy@ogulov.org
 							</a>
 							<div className="flex gap-4">
 								<Link className="flex items-center uppercase w-6 h-6"
