@@ -52,8 +52,8 @@ export const Footer = () => {
 								</Link>
 							</div>
 						</div>
-						<div className="mb-10 lg:mb-0">
-							<div className="text-s xl:text-m mb-4 uppercase">
+						<div className="my-10 lg:my-0">
+							<div className="text-m mb-4 font-proxima">
 								Навигация
 							</div>
 							<Link className="flex items-center gap-2 uppercase mb-2" href="/">
@@ -91,7 +91,7 @@ export const Footer = () => {
 							</Link>
 						</div>
 						<div className="mb-10 lg:mb-0">
-							<div className="text-s xl:text-m mb-4 uppercase">
+							<div className="text-m mb-4 font-proxima">
 								Ссылки
 							</div>
 							<Link
