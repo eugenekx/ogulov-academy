@@ -1,7 +1,8 @@
 import Link from "next/link";
 import Arrow from "@components/Arrow";
 import Image from "next/image";
-import PathImage from '/public/images/pathFirst.jpg'
+import PathImage from '/public/images/pathFirst.jpg';
+import ActionBtn from "@components/ActionBtn";
 
 export default function Contacts () {
 
@@ -150,47 +151,29 @@ export default function Contacts () {
                                     <li>Для входа во двор на домофоне наберите кнопку «Охрана 1». Идите прямо во двор пока не увидите отдельно стоящее четырехэтажное здание. Ориентир – детский садик «Абракадабра», слева будет наш подъезд. Поднимитесь на лифте на третий этаж.</li>
                                 </ol>
                             </div>
-                            <div className="mt-12">
-                                <div className="flex gap-12 mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg justify-around items-center">
-                                    <div className="hidden w-11 shrink-0 lg:flex justify-start rotate-180">
-                                        <Arrow />
-                                    </div>
-                                    <div className="relative grow rounded-3xl overflow-hidden">
-                                        <Image
-                                            src={PathImage}
-                                            alt="Клиника Огулова"
-                                        />
-                                    </div>
-                                    <div className="hidden w-11 shrink-0 lg:flex justify-start">
-                                        <Arrow />
-                                    </div>
-                                </div>
-                                <div className="w-full flex justify-center gap-2 pt-16">
-                                    <div className="w-3 h-3 border-black border-2 rounded-full"></div>
-                                    <div className="w-3 h-3 bg-black rounded-full"></div>
-                                    <div className="w-3 h-3 bg-black rounded-full"></div>
-                                </div>
-                                <div className="lg:hidden w-full flex px-4 pt-16">
-                                    <div className="w-14 rotate-180">
-                                        <Arrow />
-                                    </div>
-                                    <div className="w-14">
-                                        <Arrow />
-                                    </div>
-                                </div>
-                            </div>
                         </div>
                         <div className="lg:order-3">
                             <h2 className="xl:text-2xl text-xl font-mabry my-12 uppercase">
                                 На автомобиле
                             </h2>
-                            <div className="text-lg mb-8">
-                                <ol className="font-proxima font-light list-decimal list-inside">
+                            <div className="text-lg mb-12">
+                                <ol className="font-proxima font-light list-decimal list-inside mb-12">
                                     <li>Удобный заезд с дублера проспекта Маршала Жукова.</li>
                                     <li>Далее поворот направо на набережную Новикова прибоя.</li>
                                     <li>сразу же еще один поворот направо.</li>
                                     <li>Можно проехать правее шлагбаума вдоль дома и припарковаться там.</li>
                                 </ol>
+                                <Link
+                                legacyBehavior
+                                href="https://30488.redirect.appmetrica.yandex.com/show_point_on_map?appmetrica_tracking_id=745803332332869252&amp;lang=ru&amp;lat=55.780081&amp;lon=37.450153">
+                                    <a target="_blank">
+                                        <ActionBtn
+                                        withArrow={true}
+                                        >
+                                            Открыть в навигаторе
+                                        </ActionBtn>
+                                    </a>
+                                </Link>
                             </div>
                             <div className="mt-12">
                                 <div className="flex gap-12 mx-auto px-4 xl:max-w-screen-xl lg:max-w-screen-lg justify-around items-center">
