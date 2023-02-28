@@ -59,51 +59,63 @@ export default function Contacts () {
                     </div>
                     <div>
                         <div className="text-lg my-11">
-                            <h3 className="font-mabry uppercase">
+                            <h3 className="font-mabry uppercase mb-2">
                                 Адрес
                             </h3>
-                            <p className="font-proxima font-light">
+                            <p className="font-proxima font-light mb-2">
                                 123103, Москва, проспект Маршала Жукова, 78 к2
                                 <span> </span>
-                                <Link href="https://www.youtube.com/embed/CzcQ0DBuNdU" className="text-yellow underline">Видео</Link>
+                                <Link legacyBehavior
+                                href="https://www.youtube.com/embed/CzcQ0DBuNdU">
+                                    <a target="_blank"
+                                    className="text-yellow underline">
+                                        Нажмите, чтобы посмотреть видео как добраться
+                                    </a>
+                                </Link>
                             </p>
-                            <p className="font-proxima font-light">
+                            <p className="font-proxima font-light mb-2">
                                 123103, Москва, проспект Маршала Жукова, 78 к4
                                 <span> </span>
-                                <Link href="https://www.youtube.com/embed/Mpj8AjKceJg" className="text-yellow underline">Видео</Link>
+                                <Link legacyBehavior
+                                href="https://www.youtube.com/embed/Mpj8AjKceJg">
+                                    <a target="_blank"
+                                    className="text-yellow underline">
+                                        Нажмите, чтобы посмотреть видео как добраться
+                                    </a>
+                                </Link>
                             </p>
                         </div>
                         <div className="text-lg my-11">
-                            <h3 className="font-mabry uppercase">
+                            <h3 className="font-mabry uppercase mb-2">
                                 Телефон
                             </h3>
                             <a
                             href="tel:+79035706688"
-                            className="font-proxima font-light">
+                            className="font-proxima font-light mb-2">
                                 +7 (903) 570-66-88
                             </a>
-                            <p className="font-proxima font-light">
+                            <p className="font-proxima font-light mb-2">
                                 (Многоканальный)
                             </p>
                         </div>
                         <div className="text-lg my-11">
-                            <h3 className="font-mabry uppercase">
+                            <h3 className="font-mabry uppercase mb-2">
                                 График работы
                             </h3>
-                            <p className="font-proxima font-light">
+                            <p className="font-proxima font-light mb-2">
                                 Понедельник-пятница:с 9:30 до 20:00
                             </p>
-                            <p className="font-proxima font-light">
+                            <p className="font-proxima font-light mb-2">
                                 Суббота: с 9:30 до 18:00
                             </p>
                         </div>
                         <div className="font-mabry text-lg">
-                            <h3 className="font-mabry uppercase">
+                            <h3 className="font-mabry uppercase mb-2">
                                 Эл. почта
                             </h3>
                             <a
                             href="mailto:academy@ogulov.org"
-                            className="font-proxima font-light">
+                            className="font-proxima font-light mb-2">
                                 academy@ogulov.org
                             </a>
                         </div>
