@@ -99,9 +99,13 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 					<Link href="/courses">Курсы</Link>
 					<Link href="/instructors">Преподаватели</Link>
 					<Link href="/contacts">Контакты</Link>
-					<Link legacyBehavior href="https://online.ogulov.com/">
-						<a target="_blank">Академия-онлайн</a>
-					</Link>
+					<a
+						href="https://online.ogulov.com/"
+						rel="noreferrer"
+						target="_blank"
+					>
+						онлайн
+					</a>
 				</div>
 				<a
 					className="hidden lg:block lg:text-m text-xl py-2 px-5 border-2 border-black rounded-full"
