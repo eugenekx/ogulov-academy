@@ -94,11 +94,14 @@ export const Header = ({ isMenuOpen, toggleMenu, ...props }) => {
 				<div className="lg:hidden">
 					<Burger onClick={toggleMenu} />
 				</div>
-				<div className="hidden grow lg:flex justify-center gap-16 items-center uppercase">
+				<div className="hidden grow lg:flex justify-center xl:gap-16 gap-10 items-center uppercase">
 					<Link href="/">Главная</Link>
 					<Link href="/courses">Курсы</Link>
 					<Link href="/instructors">Преподаватели</Link>
 					<Link href="/contacts">Контакты</Link>
+					<Link legacyBehavior href="https://online.ogulov.com/">
+						<a target="_blank">Академия-онлайн</a>
+					</Link>
 				</div>
 				<a
 					className="hidden lg:block lg:text-m text-xl py-2 px-5 border-2 border-black rounded-full"
